@@ -1,0 +1,553 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Very-Dark-Blue: hsl(243, 87%, 12%);
+    --Desaturated-Blue: hsl(238, 22%, 44%);
+    --Bright-Blue: hsl(224, 93%, 58%);
+    --Moderate-Cyan: hsl(170, 45%, 43%);
+    --Light-Grayish-Blue: hsl(240, 75%, 98%);
+    --Light-Gray: hsl(0, 0%, 75%);
+}
+
+/* font-family: "Open Sans", sans-serif; */
+/* font-family: "Raleway", sans-serif; */
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+.container {
+    min-width: 450px;
+    max-width: 550px;
+    margin: 0 auto; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+header {
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 1.5rem 1.5rem 5.5rem 1.5rem;
+}
+
+header img {
+    height: 39px;
+}
+.icon:hover {
+    opacity: 0.7;
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--Desaturated-Blue);
+    cursor: pointer;
+}
+
+nav a:hover,
+nav a:focus {
+    opacity: 0.6;
+    border-bottom: 1px solid var(--Desaturated-Blue);
+}
+
+.main-content {
+    background: #fff;
+}
+
+.files {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 5rem;
+    background: #fff;
+}
+
+.illustration-1 {
+    padding: 0 2.5rem;
+}
+
+.fylo-access {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.fylo-access h1 {
+    text-align: center;
+    color: var(--Very-Dark-Blue);
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    padding: 0 4rem;
+    text-align: center;
+}
+
+.fylo-access p {
+    text-align: center;
+    padding: 0 3rem;
+    color: var(--Desaturated-Blue);
+    font-size: 16px;
+    line-height: 1.5;
+}
+.input {
+    width: 80%
+}
+
+.input-mail {
+    padding: .75rem 1rem;
+    width: 100%;
+    font-size: 12px;
+    color: hsla(239, 22%, 44%, 0.402);
+}
+
+.submit {
+    display: block;
+    margin-top: 1rem;
+    width: 100%;
+    padding: .75rem;
+    font-weight: 600;
+    background: var(--Bright-Blue);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    transform: scale(1.03);
+    transition: 0.4s;
+    opacity: 0.8;
+}
+
+.productive {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background: hsl(240, 75%, 98%);
+}
+
+.productive-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.illustration-2 {
+    padding: 3.5rem 2rem;
+}
+
+.productive-text h2 {
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    color: var(--Very-Dark-Blue);
+}
+
+.productive-text p {
+    padding: 0 1.5rem;
+    color: var(--Desaturated-Blue);
+}
+
+.cyan-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    text-decoration: none;
+    text-align: center;
+    color: var(--Moderate-Cyan);
+    margin: 1.5rem 0;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--Moderate-Cyan);
+}
+
+.cyan-link:hover {
+    opacity: 0.6;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem 2rem;
+    margin: 1.5rem 4rem 5rem 4rem;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.quotes {
+    width: 13px;
+    height: 12px;
+}
+
+.testimony {
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--Desaturated-Blue);
+}
+
+.card-icon {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.avatar {
+    width: 30px;
+    border-radius: 50%;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--Very-Dark-Blue);
+}
+
+.post {
+    font-size: 10px;
+    color: var(--Desaturated-Blue);
+}
+
+.early-access {
+    background: var(--Desaturated-Blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 3rem 2rem;
+}
+
+.access h2 {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 1.5rem;
+}
+
+.access p {
+    color: white;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.register-mail {
+    padding: .5rem 1rem;
+    width: 70%;
+    color: hsla(239, 22%, 44%, 0.402);
+}
+
+.get-started {
+    padding: .75rem;
+    margin-top: .5rem;
+    font-weight: 600;
+    font-size: 12px;
+    width: 70%;
+    background: var(--Bright-Blue);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.get-started:hover {
+    opacity: .6;
+    transform: scale(1.02);
+    transition: 0.4s;
+}
+
+footer {
+    background: var(--Very-Dark-Blue);
+    padding: 3rem ;
+}
+
+.footer-logo {
+    margin-bottom: 2rem;
+}
+
+
+.address {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.address p{
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.about a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.about a:hover {
+    opacity: 0.7;
+    border-bottom: 1px solid #fff;
+}
+
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+}
+
+.contact-us a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contact-us a:hover {
+    opacity: 0.7;
+    border-bottom: 1px solid #fff;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .75rem;
+}
+
+.socials a {
+    color: #fff;
+    padding: .25rem .5rem;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.socials a:hover {
+    opacity: .7;
+    transform: scale(1.02);
+    transition: 0.8s;
+}
+
+.attribution {
+    color: #fff;
+    font-size: 12px;
+    margin-top: 2rem;
+}
+
+.attribution a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    opacity: 0.7;
+    border-bottom: 1px solid #fff;
+}
+
+
+@media (min-width: 850px) {
+
+    .container {
+        max-width:1044px;
+    }
+
+    header {
+        padding: 3.5rem;
+    }
+
+    .illustration-1 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .files {
+        flex-direction: row-reverse;
+        align-items: center;
+        margin-bottom: 7rem;
+        padding: 0 3.5rem;
+    }
+
+    .fylo-access {
+        width: 90%;
+        align-items: flex-start;
+        gap: .75rem;
+    }
+
+    .fylo-access h1 {
+        font-size: 1.3rem;
+        text-align: left;
+    }
+
+    .fylo-access p {
+        font-size: 12px;
+        text-align: left;
+        padding: 0;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .input-mail {
+        width: 55%;
+    }
+
+    .submit {
+        display: inline;
+        width: 35%;
+        margin: .5rem;
+    }
+
+    .illustration-2 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .productive {
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 3.5rem;
+    }
+
+    .product-flex {
+        padding: 2rem 0;
+    }
+
+    .productive-text {
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .productive-text h2 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+    .productive-text p {
+        padding: 0;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .productive-text a {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .card {
+        width: 70%;
+        margin: 2rem 0;
+    }
+
+    .early-access {
+        flex-direction: row;
+        align-items: center;
+        padding: 5rem 4rem;
+    }
+
+    .access {
+        width: 100%;
+    }
+
+    .access h2,
+    .access p {
+        text-align: left;
+    }
+
+    .access p {
+        padding: 0;
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .register {
+        align-items: flex-start;
+        margin-left: 6rem;
+    }
+
+    .register-mail {
+        width: 100%;
+    }
+
+    .get-started {
+        width: 45%;
+    }
+    footer {
+        padding: 4rem;
+        font-size: 12px;
+    }
+
+    .footer-flex {
+        display: flex;
+        gap: 4rem;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-right: 6rem;
+    }
+
+    .attribution {
+        text-align: right;
+    }
+}
+
+
+@media (min-width: 950px) {
+
+    .submit {
+        width: 30%;
+    }
+    .fylo-access h1 {
+        font-size: 1.55rem;
+        text-align: left;
+    }
+
+    .productive-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .access p {
+        width: 80%;
+    }
+
+    .register-mail {
+        width: 100%;
+    }
+
+    .footer-flex {
+        margin-right: 8rem;
+    }
+
+}

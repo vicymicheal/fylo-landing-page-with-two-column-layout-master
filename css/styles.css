@@ -21,6 +21,7 @@ body {
 }
 
 .container {
+    width: 100%;
     min-width: 450px;
     max-width: 550px;
     margin: 0 auto; 
@@ -400,6 +401,7 @@ footer {
 
     .container {
         max-width:1044px;
+        margin: 0 auto;
     }
 
     header {

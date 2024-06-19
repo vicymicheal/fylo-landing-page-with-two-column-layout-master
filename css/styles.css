@@ -1,6 +1,6 @@
 * {
-    margin: 0;
     box-sizing: border-box;
+    margin: 0;
 }
 
 :root {
@@ -62,6 +62,10 @@ nav a:focus {
 }
 
 .main-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     background: #fff;
 }
 
@@ -74,6 +78,7 @@ nav a:focus {
 }
 
 .illustration-1 {
+    width: 100%;
     padding: 0 2.5rem;
 }
 
@@ -253,6 +258,15 @@ nav a:focus {
     width: 100%;
 }
 
+/* .register-mail[data-error] {
+    color: #c92432;
+    border-color: #c92432;
+}
+
+.register-mail[data-error]::after {
+    content: attr(data-error);
+} */
+
 .register-mail {
     padding: .5rem 1rem;
     width: 70%;
@@ -273,7 +287,7 @@ nav a:focus {
 }
 
 .get-started:hover {
-    opacity: .6;
+    opacity: .7;
     transform: scale(1.02);
     transition: 0.4s;
 }
@@ -318,8 +332,9 @@ footer {
 }
 
 .about a:hover {
+    color: var(--Bright-Blue);
     opacity: 0.7;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid var(--Bright-Blue);
 }
 
 .contact-us {
@@ -337,8 +352,9 @@ footer {
 }
 
 .contact-us a:hover {
+    color: var(--Bright-Blue);
     opacity: 0.7;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid var(--Bright-Blue);
 }
 
 .socials {
@@ -356,9 +372,11 @@ footer {
 }
 
 .socials a:hover {
+    color: var(--Bright-Blue);
     opacity: .7;
     transform: scale(1.02);
     transition: 0.8s;
+    border: 1px solid var(--Bright-Blue);
 }
 
 .attribution {
@@ -407,6 +425,7 @@ footer {
     }
 
     .fylo-access h1 {
+        padding: 0;
         font-size: 1.3rem;
         text-align: left;
     }
@@ -503,7 +522,7 @@ footer {
     }
 
     .get-started {
-        width: 45%;
+        width: 50%;
     }
     footer {
         padding: 4rem;
@@ -530,7 +549,7 @@ footer {
         width: 30%;
     }
     .fylo-access h1 {
-        font-size: 1.55rem;
+        font-size: 1.65rem;
         text-align: left;
     }
 
